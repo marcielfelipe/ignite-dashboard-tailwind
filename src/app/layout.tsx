@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Ignite | Dashboard',
+  icons: 'favicon.svg',
 }
 
 export default function RootLayout({
@@ -17,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="antialiased">
       <body className={inter.className}>
-        <div className="grid-cols-app grid min-h-screen">
+        <div className="grid min-h-screen grid-cols-app">
           <Sidebar />
-          <main className="px-4 pb-12 pt-8">{children}</main>
+          <main className="px-8 pb-12 pt-8">{children}</main>
         </div>
       </body>
     </html>
